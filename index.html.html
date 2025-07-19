@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/icons/anthropic.svg" type="image/svg+xml">
+
+    <title>Abhishek Podishetty | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+    <style>
+      body { font-family: 'Inter', sans-serif; }
+    </style>
+  </head>
+  <body class="bg-gray-100 text-gray-900">
+    <div class="max-w-5xl mx-auto px-4 py-10">
+      <!-- Hero Section -->
+      <section class="flex flex-col items-center text-center">
+        <img src="linkedin dp.jpeg" alt="Abhishek Podishetty" class="w-36 h-36 rounded-full shadow mb-4" />
+        <h1 class="text-4xl font-bold mb-2">Abhishek Podishetty</h1>
+        <p class="text-lg max-w-2xl mb-4">
+          I am a fourth-year B.Tech student passionate about learning and growing in tech. Always curious about how things work and love solving challenging problems.
+        </p>
+        <a href="https://drive.google.com/file/d/12U4ZWnJUeEbHFZ163DtTc0_IDZFdBSk7/view?usp=sharing" target="_blank" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition">Download Resume</a>
+      </section>
+
+      <!-- About Section -->
+      <section class="mt-16">
+        <h2 class="text-2xl font-semibold mb-4 border-b-2 inline-block">About Me</h2>
+        <p class="max-w-3xl text-md leading-relaxed">
+          I am a B.Tech student deeply interested in software engineering and problem-solving. I enjoy exploring new tech, building projects, and constantly upgrading my skills in both core CS, modern web development and data science.
+        </p>
+      </section>
+
+      <!-- Skills Section -->
+      <section class="mt-12">
+        <h2 class="text-2xl font-semibold mb-4 border-b-2 inline-block">Skills</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 text-sm">
+          <div>
+            <h3 class="font-semibold mb-2">Web Development</h3>
+            <ul class="list-disc pl-5">
+              <li>HTML, CSS, JavaScript</li>
+              <li>Bootstrap, Tailwind CSS</li>
+              <li>React.js, Node.js, Express.js</li>
+              <li>MongoDB, REST APIs</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="font-semibold mb-2">Data Science & ML</h3>
+            <ul class="list-disc pl-5">
+              <li>Python, NumPy, Pandas</li>
+              <!-- <li>scikit-learn</li> -->
+            </ul>
+          </div>
+          <div>
+            <h3 class="font-semibold mb-2">Core CS</h3>
+            <ul class="list-disc pl-5">
+              <li>Java, OOPs, SQL</li>
+              <li>MySQL, PostgreSQL</li>
+              <li>DBMS, OS, CN</li>
+              <!-- <li>Low-level design (Basics)</li> -->
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section class="mt-12">
+        <h2 class="text-2xl font-semibold mb-4 border-b-2 inline-block">Projects</h2>
+        <div class="flex flex-wrap gap-2 text-sm mb-6" id="filter-buttons">
+          <button class="filter-btn px-4 py-1 border rounded bg-blue-100 text-blue-700" data-filter="all">All</button>
+          <button class="filter-btn px-4 py-1 border rounded" data-filter="web">Web Dev</button>
+          <!-- <button class="filter-btn px-4 py-1 border rounded" data-filter="ml">ML</button> -->
+          <button class="filter-btn px-4 py-1 border rounded" data-filter="ds">Data Science</button>
+          <!-- <button class="filter-btn px-4 py-1 border rounded" data-filter="dsa">DSA</button> -->
+        </div>
+        <div class="grid sm:grid-cols-2 gap-6">
+          <!-- Project Card Example -->
+          <div class="bg-white border rounded-lg shadow-md p-5 project-card" data-category="web">
+            <h3 class="text-lg font-semibold">Simon Says Memory Game</h3>
+            <p class="text-gray-600 mb-2">A web-based memory game where players repeat an increasing sequence of colors.</p>
+            <p class="text-xs mb-2"><strong>Tech Stack:</strong> HTML, CSS, JavaScript</p>
+            <a href="https://github.com/Abhishek200559" class="text-blue-600 hover:underline text-sm">GitHub</a>
+          </div>
+          <div class="bg-white border rounded-lg shadow-md p-5 project-card" data-category="ds">
+            <h3 class="text-lg font-semibold">Simon Says Memory Game</h3>
+            <p class="text-gray-600 mb-2">A web-based memory game where players repeat an increasing sequence of colors.</p>
+            <p class="text-xs mb-2"><strong>Tech Stack:</strong> HTML, CSS, JavaScript</p>
+            <a href="https://github.com/Abhishek200559" class="text-blue-600 hover:underline text-sm">GitHub</a>
+            <a href="#" class="text-blue-600 hover:underline text-sm">Live</a>
+          </div>
+          <!-- <div class="bg-white border rounded-lg shadow-md p-5 project-card" data-category="web">
+            <h3 class="text-lg font-semibold">Simon Says Memory Game</h3>
+            <p class="text-gray-600 mb-2">A web-based memory game where players repeat an increasing sequence of colors.</p>
+            <p class="text-xs mb-2"><strong>Tech Stack:</strong> HTML, CSS, JavaScript</p>
+            <a href="https://github.com/Abhishek200559" class="text-blue-600 hover:underline text-sm">GitHub</a>
+            <a href="#" class="text-blue-600 hover:underline text-sm">Live</a>
+          </div> -->
+        </div>
+      </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-blue-600 text-white text-center py-10 mt-16">
+      <h3 class="text-2xl font-bold mb-2">ABHISHEK PODISHETTY</h3>
+      <p class="mb-4">podishettyabhi17@gmail.com</p>
+      <div class="flex justify-center gap-6 text-2xl mb-4">
+        <a href="https://www.linkedin.com/in/abhishekpodishetty/" class="hover:text-white"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/abhishek_podishetty17/" class="hover:text-white"><i class="fab fa-instagram"></i></a>
+        <a href="https://x.com/Abhishek_17__" class="hover:text-white"><i class="fab fa-twitter"></i></a>
+        <a href="https://github.com/Abhishek200559" class="hover:text-white"><i class="fab fa-github"></i></a>
+      </div>
+      <p class="text-sm">&copy; 2025, Abhishek Podishetty</p>
+    </footer>
+
+    <script>
+      const filterButtons = document.querySelectorAll('.filter-btn');
+      const projectCards = document.querySelectorAll('.project-card');
+
+      filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          const category = button.getAttribute('data-filter');
+
+          // Toggle active state
+          filterButtons.forEach(btn => btn.classList.remove('bg-blue-100', 'text-blue-700'));
+          button.classList.add('bg-blue-100', 'text-blue-700');
+
+          projectCards.forEach(card => {
+            const cardCategory = card.getAttribute('data-category');
+            if (category === 'all' || cardCategory === category) {
+              card.classList.remove('hidden');
+            } else {
+              card.classList.add('hidden');
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
